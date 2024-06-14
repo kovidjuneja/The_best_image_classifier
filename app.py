@@ -2,6 +2,7 @@ import os
 os.environ['LD_LIBRARY_PATH'] = '/path/to/libGL.so.1'
 import streamlit as st
 import urllib
+import tensorflow
 import cv2
 import numpy as np
 from PIL import Image
