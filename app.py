@@ -1,7 +1,6 @@
 import os
 os.environ['LD_LIBRARY_PATH'] = '/path/to/libGL.so.1'
 import streamlit as st
-import tensorflow as tf
 import urllib
 import cv2
 import numpy as np
