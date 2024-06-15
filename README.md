@@ -69,6 +69,11 @@ Freepik:-https://www.freepik.com/
 
 Dreamstime:-https://www.dreamstime.com/free-photos
 
+Training data shape: (100766, 32, 32, 3)
+Training labels distribution: [50398 50368]
+Test data shape: (20465, 32, 32, 3)
+Test labels distribution: [10235 10230]
+
 ## Model
 [(Back to top)](#table-of-contents)
 
