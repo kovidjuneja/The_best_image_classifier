@@ -92,4 +92,4 @@ The application has been deployed in the Streamlit Cloud.
 
 You can access it here: [https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/](https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/)
 
-![image](https://github.com/kovidjuneja/assets/blob/main/image.png)
+![image]([https://github.com/kovidjuneja/assets/blob/main/image.png](https://github.com/kovidjuneja/assets/blob/main/merged_image.jpg))
