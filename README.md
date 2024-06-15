@@ -75,8 +75,11 @@ Dreamstime:-https://www.dreamstime.com/free-photos
 [(Back to top)](#table-of-contents)
 
  Training data shape: (100766, 32, 32, 3)
+ 
 Training labels distribution: [50398 50368]
+
 Test data shape: (20465, 32, 32, 3)
+
 Test labels distribution: [10235 10230]
 
 
