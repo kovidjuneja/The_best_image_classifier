@@ -82,6 +82,7 @@ During evaluation, the model achieved an accuracy of 88.68%.
 Classification Report and Confusion matrix have been uploaded.
 
 Classification Report: https://github.com/kovidjuneja/The_best_image_classifier/blob/main/Classification%20Report
+
 Confusion Matrix: https://github.com/kovidjuneja/The_best_image_classifier/blob/main/Confusion%20Matrix
 > 0 represents Real and 1 represents AI Generated
 ## Deployment
