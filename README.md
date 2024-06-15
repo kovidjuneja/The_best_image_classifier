@@ -7,12 +7,13 @@ The best Image Classifier is a machine learning model designed to effectively cl
 
 ## Table of Contents
 
-- [The_best_Image_Classifier](#The_best_Image_Classifier)
+- [The_best_Image_Classifier](#the_best_image_classifier)
 - [Table of Contents](#table-of-contents)
-- [Brief Overview](##Brief-Overview)
+- [Brief Overview](#brief-overview)
 - [Demo](#demo)
 - [Installation](#installation)
 - [Data Sources](#data-sources)
+- [Data Distribution](#data-distribution)
 - [Model](#model)
 - [Testing and Evaluation](#testing-and-evaluation)
 - [Deployment](#deployment)
@@ -69,12 +70,13 @@ Freepik:-https://www.freepik.com/
 
 Dreamstime:-https://www.dreamstime.com/free-photos
 
-Training data shape: (100766, 32, 32, 3)
 
+## Data Distribution
+[(Back to top)](#table-of-contents)
+
+ Training data shape: (100766, 32, 32, 3)
 Training labels distribution: [50398 50368]
-
 Test data shape: (20465, 32, 32, 3)
-
 Test labels distribution: [10235 10230]
 
 
