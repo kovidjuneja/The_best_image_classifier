@@ -90,6 +90,6 @@ Confusion Matrix: https://github.com/kovidjuneja/The_best_image_classifier/blob/
 
 The application has been deployed in the Streamlit Cloud.
 
-You can access it here: [https://ai-image-classifier-sk.streamlit.app/](https://ai-image-classifier-sk.streamlit.app/)
+You can access it here: [https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/](https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/)
 
 ![image](https://github.com/kovidjuneja/assets/blob/main/image.png)
