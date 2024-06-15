@@ -1,3 +1,4 @@
+![Banner](./merged_image.jpg)
 
 # The_best_Image_Classifier
 
