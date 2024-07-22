@@ -20,10 +20,16 @@ def preprocess_image(image):
 def creator():
     model_url = "https://raw.githubusercontent.com/kovidjuneja/The_best_image_classifier/main/model.h5"
     local_model_path = "./model.h5" 
+
     if not os.path.exists(local_model_path):
         download_file(model_url, local_model_path)
-     model = tf.keras.models.load_model(local_model_path)
-    return model
+    
+    try:
+        model = tf.keras.models.load_model(local_model_path)
+        return model
+    except Exception as e:
+        st.error(f"Error loading model: {e}")
+        return None
 
 def predict(image,model):
     preprocessed_image=preprocess_image(image)
