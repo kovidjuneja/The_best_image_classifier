@@ -1,8 +1,3 @@
-numpy
-matplotlib
-opencv-python
-beautifulsoup4
-requests
-Pillow
 tensorflow
-scikit-learn
+numpy
+opencv-python
