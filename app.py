@@ -8,41 +8,41 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.models import load_model
 
-class_labels=['REAL','FAKE']
+class_labels = ['AI', 'REAL']
 
 def preprocess_image(image):
-    image=cv2.resize(image,(32,32))
-    image=image/255.0
-    image=image.reshape(-1,32,32,3)
+    image = cv2.resize(image, (32, 32))
+    image = image / 255.0  # Normalize image pixel values if needed
+    image = image.reshape((1, 32, 32, 3))
     return image
-    
-@st.cache_resource
+
+@st.cache(allow_output_mutation=True)
 def creator():
-    model=load_model("model.h5")
-    return model
+    model = load_model("./model.h5")  # Load the trained model
+    return model 
 
-
-def predict(image,model):
-    preprocessed_image=preprocess_image(image)
-    predictions=model.predict(preprocessed_image)
-    predicted_class=tf.argmax(predictions,axis=1)[0]
-    confidence=predictions[0][predicted_class]
-    if(confidence<=0.5):
-        predicted_label='REAL'
+@st.cache(allow_output_mutation=True)
+def predict(image, model):
+    preprocessed_image = preprocess_image(image)
+    predictions = model.predict(preprocessed_image)
+    predicted_class = tf.argmax(predictions, axis=1)[0]
+    confidence = predictions[0][predicted_class]
+    if confidence <= 0.5:
+        predicted_label = 'REAL'
     else:
-        predicted_label='FAKE'
+        predicted_label = 'AI'
     
-       
     return predicted_label
-
-
 
 def main():
     st.title("The-Best-Image-Classifier")
-    model=creator()
+
+    model = creator()
     if model is None:
-        st.warning("Fatal_error")
-    input_method=st.radio("Select Input Method:",("Image File","URL"))
+        st.warning("Please make sure the model file is available.")
+
+    input_method = st.radio("Select input method:", ("Image File", "URL"))
+
     if input_method == "Image File":
         uploaded_file = st.file_uploader("Upload an image file", type=['jpg', 'jpeg'])
         if uploaded_file is not None:
@@ -71,16 +71,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
