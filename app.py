@@ -18,7 +18,7 @@ def preprocess_image(image):
     
 @st.cache_resource
 def creator():
-    model=load_model("./model.h5")
+    model=load_model("https://github.com/kovidjuneja/The_best_image_classifier/blob/main/model.h5")
     return model
 
 
