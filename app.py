@@ -3,6 +3,7 @@ os.environ['LD_LIBRARY_PATH'] = '/path/to/libGL.so.1'
 import streamlit as st
 import urllib
 import cv2
+import tensorflow as tf
 import numpy as np
 from PIL import Image
 from tensorflow.keras.models import load_model
