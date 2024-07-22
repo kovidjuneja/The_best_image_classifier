@@ -16,12 +16,11 @@ def preprocess_image(image):
     image = image.reshape((1, 32, 32, 3))
     return image
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource
 def creator():
-    model = load_model("model.h5")  # Load the trained model
-    return model 
+    model=load_model("model.h5")
+    return model
 
-@st.cache(allow_output_mutation=True)
 def predict(image, model):
     preprocessed_image = preprocess_image(image)
     predictions = model.predict(preprocessed_image)
