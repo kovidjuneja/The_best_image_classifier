@@ -18,7 +18,7 @@ def preprocess_image(image):
 
 @st.cache(allow_output_mutation=True)
 def creator():
-    model = load_model("./model.h5")  # Load the trained model
+    model = load_model("model.h5")  # Load the trained model
     return model 
 
 @st.cache(allow_output_mutation=True)
