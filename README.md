@@ -105,4 +105,4 @@ Confusion Matrix: https://github.com/kovidjuneja/The_best_image_classifier/blob/
 
 The application has been deployed in the Streamlit Cloud.
 
-You can access it here: [https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/](https://thebestimageclassifier-qsmtkgdbh4qw2brhxfrckn.streamlit.app/)
+You can access it here: https://thebestimageclassifier-ruyudrfkfvxmtl3qrs6b8b.streamlit.app/
