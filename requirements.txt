@@ -1,3 +1,15 @@
-tensorflow
 numpy
-opencv-python
+matplotlib.pyplot
+os
+cv2
+random
+requests
+bs4.BeautifulSoup
+urllib.parse
+urllib.request
+uuid
+PIL.Image
+io.BytesIO
+pickle
+tensorflow
+tensorflow.keras
